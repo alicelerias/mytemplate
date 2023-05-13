@@ -107,93 +107,66 @@
 				</div>
 			</div>
 		</header>
-		<div id="colorlib-services">
+		<div id="colorlib-work">
 			<div class="container">
 				<div class="row text-center">
-					<h2 class="bold">Skills</h2>
+					<h2 class="bold">Portfólio</h2>
+				</div>
+				<div class="row">
+					<div class="col-md-12 col-md-offset-0 text-center animate-box intro-heading">
+						<span>Portfólio</span>
+						<h2>Site de fotografias e textos </h2>
+					</div>
 				</div>
 				<div class="row">
 					<div class="col-md-12">
-						<div class="services-flex">
-							<div class="one-third">
-								<div class="row">
-									<div class="col-md-12 col-md-offset-0 animate-box intro-heading">
-										<span>Minhas habilidades</span>
-										<h2>Aqui há um pouco sobre as minhas habilidades:</h2>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-md-12">
-										<div class="rotate">
-											<h2 class="heading">Skills</h2>
-										</div>
-									</div>
-									<div class="col-md-6">
-										<div class="services animate-box">
-											<h3>1 - Arquitetura</h3>
-											<ul>
-												<li>Programação orientada a objeto</li>
-<li>Design Pattern</li>
-<li>Time Complexity</li>
-<li>Data Structure</li>
-<li>Algoritmo</li>
-<li>MVC</li>
-<li>Domain Driven Design</li>
-<li>Unit Test</li>
-<li>Test Driven Development</li>
-<li>Versionamento de código em Git</li>
+						<div class="rotate">
+							<h2 class="heading">Portfólio</h2>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="work-entry animate-box">
+							<a href="work.html" class="work-img" style="background-image: url(images/work-2.png);">
+							</a>
+							<div class="col-md-8 col-md-offset-2">
+								<div class="desc">
+									<h2>Frontend</h2>
+									<p class="read"><a href="https://github.com/alicelerias/awesome-blog">Ver o código no github</a></p>
+									<p>O Awesome! é uma rede social para compartilhamento de fotografias e textos.</p>
+									<p>Desenvolvi o frontend em React Typescript, utilizando ferramentas como useContext, axios, useForm e react-query. 
+									 Utilizei Tailwind para construção do css. Testei a maior parte dos componentes utilizando jest.</p>
+									</p>
+									<img class="img-responsive" src="images/awesome/login.png" alt="html5 bootstrap template by colorlib.com"><br>
+									<p>O site inicia pela página de login, com opção de criar um novo usuário, e opção de manter o usuário cadastrado</p>
+									<p>O feed do site mostra as postagens mais recentes dos usuários seguidos. O usuário logado têm também a
+										opção de acessar a aba "for you" que acessa as postagens mais recentes dos usuários em alta, e a aba "your posts" onde 
+										pode acessar/editar/deletar seus próprios posts.
+									</p>
+									<p>A página inicial também apresenta ao usuário uma lista de usuários em alta.</p>
 
-											</ul>
-										</div>
-										<div class="services animate-box">
-											<h3>3 - Frontend Development</h3>
-											<ul>
-												<li>Single Page Applications</li>
-<li>Progressive Web Apps</li>
-<li>Material Design</li>
-<li>Style Systems</li>
-<li>Javascript</li>
-<li>Typescript</li>
-<li>React
-	Hooks, Context, Component Life Cycle, Unit Test</li>
-<li>Redux</li>
-<li>Material UI</li>
-<li>Bootstrap</li>
-<li>TailWind</li>
-<li>Emotion</li>
-<li>Modules</li>
-<li>HTML / CSS</li>
-											
-											</ul>
-										</div>
-									</div>
-									<div class="col-md-6">
-										<div class="services animate-box">
-											<h3>2 - Backend Development</h3>
-											<ul>
-												<li>GOlang</li>
-												<li>REST  API</li>
-												<li>Reactive Architecture</li>
-												<li>Node/JS</li>
-												<li>Django/Python</li>
+									<img class="img-responsive" src="images/awesome/newpostawesome.png" alt="html5 bootstrap template by colorlib.com"><br>
+									<p>O usuário tem a opção de criar um novo post</p>
+									<img class="img-responsive" src="images/awesome/singlepageblog.png" alt="html5 bootstrap template by colorlib.com"><br>
+									<p>Pode também acessar o blog pessoal de outro usuário</p>
+									<p>Clicando no ícone de usuário, pode acessar uma sidebar</p>
+									<img class="img-responsive" src="images/awesome/profileawesome.png" alt="html5 bootstrap template by colorlib.com"><br>
+									<p>Na sidebar, pode acessar seu próprio profile. Utilizei useContext para criação das funcionalidades do current user.</p>
+									
+									<p>*O frontend é responsivo, podendo ser acessado de dispositivos mobile.</p>
 
-
-											</ul>
-										</div>
-										<div class="services animate-box">
-											<h3>4 - Banco de dados</h3>
-											<ul>
-												<li>SQL</li>
-												<li>PostgreSQL, MySql, Sqlite</li>
-												<li>CRUD</li>
-												<li>SubQuery</li>
-												
-											</ul>
-										</div>
-									</div>
-								</div>
+									<h2>Backend e banco de dados</h2>
+									<p>Desenvolvi as APIs do backend em Golang, utilizando os pacotes Gin, Gorm, e o Postgres para o banco de dados.</p>
+									<img class="img-responsive" src="images/awesome/postdetalhe.png" alt="html5 bootstrap template by colorlib.com"><br>
+									<p>Clicando em um post, o usuário acessa uma página de detalhe, onde pode comentar, dar like, e ver os comentários para aquele post.</p>
+									<p>Se o post for seu, pode visualizar um botão para edição do post.</p>
+								<h2> Outras considerações</h2>
+									<p>Utilizei Redis para fazer o cache dos dados mais utilizados.</p>
+									<p>Populei o banco de dados escrevendo uma seed que gerou usuários, posts, follows e outras interações.</p>
+									<p>Tanto o backend, quanto o frontend estão testados.</p>
+									<p>O frontend conta com recursos que otimizam a navegação do usuário, como skeleton, alertas, etc.</p>
 							</div>
-							<div class="one-forth services-img" style="background-image: url(images/skills.jpg);">
 							</div>
 						</div>
 					</div>
